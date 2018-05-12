@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/tvNumeroRand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="100dp" />
+
+        <ImageButton
+            android:id="@+id/btRandomizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <Button
+            android:id="@+id/btDefinirLimites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Definir Limites" />
+
+        <LinearLayout
+            android:id="@+id/llIntervalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLabelInicio"
+                android:layout_width="39dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="INTERVALO DE" />
+
+            <EditText
+                android:id="@+id/etInicio"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvLabelAte"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="ATÉ"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/etFinal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="10"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btVoltarPadrao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar ao Padrão" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
